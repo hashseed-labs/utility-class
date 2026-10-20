@@ -16,6 +16,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <jjwt.version>0.11.5</jjwt.version>
         <servlet.version>4.0.1</servlet.version>
+        <jackson.version>2.15.3</jackson.version>
     </properties>
 
     <dependencies>
@@ -25,6 +26,17 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- Jackson：JsonUtil -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>

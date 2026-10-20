@@ -19,6 +19,10 @@
 | `CalculateUtil` | 四则运算 | [CalculateUtil.md](./CalculateUtil.md) |
 | `CompareUtil` | 数值 / 日期大小比较 | [CompareUtil.md](./CompareUtil.md) |
 | `DateUtil` | 时间格式化、解析、同一天判断 | [DateUtil.md](./DateUtil.md) |
+| `JsonUtil` | JSON 序列化 / 反序列化 | [JsonUtil.md](./JsonUtil.md) |
+| `BeanUtil` | 对象属性拷贝 / Map 互转 | [BeanUtil.md](./BeanUtil.md) |
+| `TreeUtil` | 树形组装 | [TreeUtil.md](./TreeUtil.md) |
+| `PageUtil` | 分页计算 | [PageUtil.md](./PageUtil.md) |
 
 ### 校验 / 随机 / ID
 
@@ -63,6 +67,7 @@ com.utility
 | --- | --- |
 | 绝大多数工具类 | 仅需 JDK 8 |
 | `JwtUtil` | jjwt 0.11.5 |
+| `JsonUtil` | jackson-databind + jackson-datatype-jsr310 2.15.3 |
 | `RequestParamUtil` / `IpUtil` | javax.servlet-api（`provided`） |
 
 ---
@@ -72,13 +77,3 @@ com.utility
 - 工具类均为 `final`，构造方法私有，仅提供静态方法
 - 非法参数或转换 / 加解密失败时，通常抛出 `IllegalArgumentException`
 - 集合 / 数组类运算尽量**不修改入参**，返回新结果
-
----
-
-## 本次补齐说明
-
-相对原有能力，本次新增：
-
-`ObjectUtil`、`ArrayUtil`、`MapUtil`、`RandomUtil`、`RegexUtil`、`DigestUtil`、`IoUtil`、`FileUtil`、`AssertUtil`、`IpUtil`、`IdUtil`
-
-若后续还需要，可继续扩展：`JsonUtil`（需 Jackson/Gson）、`BeanUtil`（对象拷贝）、`TreeUtil`（树形组装）、`PageUtil`（分页计算）等。
