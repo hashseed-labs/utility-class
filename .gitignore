@@ -1,0 +1,83 @@
+# -------------------- Maven / Gradle --------------------
+target/
+build/
+out/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+*.jar
+!**/src/main/**/lib/*.jar
+!**/src/test/**/lib/*.jar
+
+# -------------------- IDE --------------------
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code / Cursor
+.vscode/
+.history/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# -------------------- OS --------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# -------------------- Logs / Temp --------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# -------------------- Env / Secrets --------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# -------------------- Test / Coverage --------------------
+.classpath_coverage
+coverage/
+*.exec
+.jacoco/
+test-output/
+
+# -------------------- Package files --------------------
+*.class
+*.context
+hs_err_pid*
+replay_pid*
